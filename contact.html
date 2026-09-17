@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote the Big Specter</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <style>
+        body{
+            background-color:grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 75vh;
+            margin-top: 0px;
+        }
+
+        
+        #quote-container {
+            font-family:"Pasifico", cursive;
+            font-size: 67px;
+            color: navy;
+            align-items:"center";
+            width: 450px;   /* wide enough for your longest quote */
+            overflow: hidden;
+        }
+        footer{
+            position: fixed;
+            bottom:0;
+        }
+        
+    </style>
+
+
+</head>
+<body>
+<div id="quote-container"></div>
+<script>
+    const quotes = [
+        "I don’t have dreams, I have goals",
+        "I don’t get lucky.  I make my own luck.",
+        "Confidence isn’t ‘they will like me.’ Confidence is ‘I’ll be fine if they don’t.’",
+        "I don’t play the odds, I play the man.",
+        "When you’re backed against the wall, break the goddamn thing down.",
+        "I’m not interested in great, I want to know who its Daddy is.",
+    ];
+
+    
+    const container = document.getElementById("quote-container");
+    let quoteIndex = 0;
+
+    function showQuote(){
+        container.textContent = quotes[quoteIndex];
+
+        setTimeout(() => {
+            container.textContent = "";
+        
+            setTimeout(() => {
+                quoteIndex= (quoteIndex+1)%quotes.length
+                showQuote();
+            },500);
+        },2000);
+    }
+    showQuote();
+</script>
+    
+
+<footer>
+    <p>&copy; 2026 My Website. All rights reserved.</p>
+</footer>
+</body>
+<a href="contact.html">
+<div style=text-align:center; margin-top:50;>
+      <img src="Harvey.gif" type="Harveyspectertuff" href="contact.html" style="width: 350px; height: auto;">
+</div>
+</html>
