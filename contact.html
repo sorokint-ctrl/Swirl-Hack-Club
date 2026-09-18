@@ -8,11 +8,8 @@
     <style>
         body{
             background-color:grey;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 75vh;
-            margin-top: 0px;
+            text-align: center;
+            margin: 0;
         }
 
         
@@ -20,18 +17,21 @@
             font-family:"Pasifico", cursive;
             font-size: 67px;
             color: navy;
+            height: 200px;
             align-items:"center";
-            width: 450px;   /* wide enough for your longest quote */
+            margin: 50px auto 0 auto;   /* wide enough for your longest quote */
             overflow: hidden;
         }
         footer{
             position: fixed;
             bottom:0;
+            width:100%;
         }
-        
+        a {
+            display: block;
+            margin-top:0px;
+        }
     </style>
-
-
 </head>
 <body>
 <div id="quote-container"></div>
@@ -62,15 +62,18 @@
         },2000);
     }
     showQuote();
+
 </script>
     
 
 <footer>
     <p>&copy; 2026 My Website. All rights reserved.</p>
 </footer>
-</body>
-<a href="contact.html">
-<div style=text-align:center; margin-top:50;>
-      <img src="Harvey.gif" type="Harveyspectertuff" href="contact.html" style="width: 350px; height: auto;">
+<div style="text-align:center; margin-top:50px;">
+    <a href="index.html">Go back</a>
 </div>
+<a href="contact.html">
+      <img src="Harvey.gif" type="Harveyspectertuff" style="width: 420px; margin: top 10px;">
+</a>
+</body>
 </html>
