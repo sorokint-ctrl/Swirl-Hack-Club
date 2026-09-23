@@ -8,37 +8,65 @@
   <style>
     body{
       background-color: black;
+      padding-bottom:80px;
     }
     h1{
       color:crimson;
-      margin-top:250px;
+      margin-top:220px;
       font-family: "Georgia", cursive;
     }
     .center {
       text-align: center;
     }
     a{
-      color:navy;
+      color:rgb(0, 38, 209);
       font-size:20px;
+      margin-bottom: 30px;
+    }
+    .container{
+      text-align:center;
     }
     footer {
       background-color: #333;
       color: white;
       text-align: center;
       padding: 20px;
-      position: fixed; /* Optional: keeps footer at bottom during scroll */
+      position: fixed;
       bottom: 0;
       width: 100%;
+    }
+    button{
+      color: rgb(0, 0, 0);
+      background-color: lightslategray;
+    }
+    .button-link:hover {
+      background-color: #790303;
+    }
+    #myImage {
+      display: block;
+      margin: 0 auto;
+      width:100px;
+    }
+    img{
+      display:block;
+      width:150px;
+      margin: 0 auto;
     }
   </style>
 </head>
 <body>
   <h1 class="center">The world of SUITS:</h1>
   <div class="center">
-    <a href="contact.html">Quote the Big Specter</a>
+    <a href="contact.html" class="button-link">Quote the Big Specter</a>
   </div>
   <div class="center">
-    <a href="contact2.html">Firm Names</a>
+    <a href="contact2.html" class="button-link">Firm Names</a>
+  </div>
+  <div class="center">
+    <img id="Loyalty is a two way street" src="Suitsposter.png" style="display:none;">
+    <button onclick="const img=document.getElementById('Loyalty is a two way street'); img.style.display = img.style.display==='block' ? 'none' : 'block'">
+      Loyalty is a two way street
+    </button>   
   </div>
   <footer>
     <p>&copy; All rights reserved</p>
